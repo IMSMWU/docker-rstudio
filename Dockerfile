@@ -1,3 +1,4 @@
+# vim:set ft=dockerfile:
 FROM ubuntu:xenial
 MAINTAINER Christian Hotz-Behofsits <christian.hotz-behofsits@wu.ac.at>
 
