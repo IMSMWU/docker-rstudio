@@ -1,5 +1,6 @@
 #!/bin/bash
 while IFS=: read username password
 do
-    useradd -G $usergroups -c "$fullname" $username
+    useradd --create-home $username
+    echo "$username:$password" | chpasswd
 done < users.txt
